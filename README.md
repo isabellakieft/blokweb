@@ -44,11 +44,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="home2.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  <img src="visite1.png" width="375px" alt="omschrijving van de pagina">
-  <img src="visite2.png" width="375px" alt="omschrijving van de pagina">
-   <img src="visite3.png" width="375px" alt="omschrijving van de pagina">
-    <img src="visite4.png" width="375px" alt="omschrijving van de pagina">
-     <img src="visite5.png" width="375px" alt="omschrijving van de pagina">
+  <img src="images/visite1.png" width="375px" alt="omschrijving van de pagina">
+  <img src="images/visite2.png" width="375px" alt="omschrijving van de pagina">
+   <img src="images/visite3.png" width="375px" alt="omschrijving van de pagina">
+    <img src="images/visite4.png" width="375px" alt="omschrijving van de pagina">
+     <img src="images/visite5.png" width="375px" alt="omschrijving van de pagina">
   hier de naam van de pagina  
   
  
@@ -74,8 +74,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="frame1.png" width="375px" alt="breakdown van de hele pagina">
-  <img src="frame2.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/frame1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="images/frame2.png" width="375px" alt="breakdown van de hele pagina">
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
