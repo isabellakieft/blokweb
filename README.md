@@ -64,6 +64,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   Te weinig kopjes
   bij plan your visite geen h2
+  niet alle links waren duidelijk
+  tusssen secties meer ruimte
+  geen headings skippen
+  betere focus states
+  skiplink
+  links identificeren in nieuwe tab
+  dark-light mode
+  high contrast
+  
 </details>
 
 

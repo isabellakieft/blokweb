@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,13 +17,35 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-text-op: #ffffff;
+	--color-background: #ffffff;
+	--color-main: #EE8CB4;
+	--color-select: #F1A3C3;
+
 }
 
 
+@font-face {
+	font-family: 'base';
+	/* set name */
+	src: url('../font/FuturaPro-Medium.woff2');
+	/* url of the font */
+}
 
+@font-face {
+	font-family: 'basegroot';
+	/* set name */
+	src: url('../font/FuturaPro-Heavy.woff2');
+	/* url of the font */
+}
 
+@font-face {
+	font-family: 'tekstgroot';
+	/* set name */
+	src: url('../font/CaslonGraphique.woff2');
+	/* url of the font */
+}
 
 /****************/
 /* JOUW STYLING */
@@ -29,3 +53,161 @@
 
 /* jouw code */
 
+p {
+	font-family: 'base';
+	color: var(--color-text);
+}
+
+h2 {
+	font-family: 'basegroot';
+	color: var(--color-text);
+	font-size: 2.5em;
+}
+
+
+/* HEADER */
+
+header {
+	background-color: var(--color-background);
+	position: sticky;
+	top: 0;
+}
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* header nav ul {
+   display: flex;
+   gap: 2em;
+   margin: 0;
+   padding: 0;
+} */
+
+header nav ul {
+	display: none;
+
+}
+
+header nav>ul {
+	display: none;
+	flex-direction: column;
+	top: 10em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: 100% 0;
+	transition: 1s;
+	background-color: var(--color-background);
+
+	font-family: 'basegroot';
+	font-weight: bold;
+	text-transform: uppercase;
+
+
+}
+
+header nav ul.uitklap {
+	display: flex;
+}
+
+header nav button {
+	all: unset;
+}
+
+
+header nav section button {
+	font-family: 'basegroot';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header nav section:nth-of-type(1) {
+	display: none;
+}
+
+
+header nav section:nth-of-type(1) ul {
+	flex-direction: column;
+	display: none
+}
+
+header nav section:nth-of-type(1) ul.is-open {
+	display: flex;
+
+}
+
+header nav section:nth-of-type(2) ul {
+	flex-direction: column;
+	display: none
+}
+
+header nav section:nth-of-type(2) ul.open {
+	display: flex;
+}
+
+
+
+header li {
+	list-style: none;
+
+}
+
+header li a {
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+header li a:hover {
+	color: var(--color-select);
+}
+
+header a img {
+	width: 6em;
+	height: auto;
+}
+
+header section button {
+	all: unset;
+	border: 0.2em solid var(--color-select);
+}
+
+header section button:hover {
+	color: var(--color-select);
+}
+
+header section:nth-of-type(3) button {
+	background-color: var(--color-main);
+	color: var(--color-text);
+	padding: 0.5em;
+	border-radius: 1.5em;
+	border: none;
+
+}
+
+header section:nth-of-type(3) button:hover {
+	background-color: var(--color-select);
+}
+
+
+
+@media (min-width:63em) {
+	header nav>ul {
+			display: flex;
+	flex-direction: row;
+	top: 10em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	translate: 0% 0;
+	transition: 1s;
+	background-color: var(--color-background);
+	}
+
+header nav > button {
+	display: none;
+}
+
+}
