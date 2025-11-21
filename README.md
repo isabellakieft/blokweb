@@ -72,7 +72,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   links identificeren in nieuwe tab
   dark-light mode
   high contrast
-  
+
 </details>
 
 
@@ -109,11 +109,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | isabella                    | britt                 | student 3    | student 4        |
+  | ---                         | ---                   | ---          | ---              |
+  | menu uitklapscherm heel     | met css elementen
+    erg groot maken ipv een       verplaatsen
+    soort klein vlakje.         | nth-of-type 
+  | video cssen | |               selectoren
+                                                        | dit wil ik zeker |
+  | ...            | ...        | ...                   | ...              |
 
 
   ### Verslag van meeting
