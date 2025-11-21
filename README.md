@@ -111,11 +111,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | isabella                    | britt                 | student 3    | student 4        |
   | ---                         | ---                   | ---          | ---              |
-  | menu uitklapscherm heel     | met css elementen
+  | menu uitklapscherm heel     | met css elementen     | dit wil ik zeker 
     erg groot maken ipv een       verplaatsen
     soort klein vlakje.         | nth-of-type 
-  | video cssen | |               selectoren
-                                                        | dit wil ik zeker |
+  | video cssen                 | selectoren
+                                                        
   | ...            | ...        | ...                   | ...              |
 
 
