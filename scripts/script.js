@@ -33,3 +33,25 @@ hamburger.onclick = menu;
 function menu() {
     hamburgerShow.classList.toggle("uitklap");
 }
+
+
+
+
+const deVideoButton = document.querySelector("main section:nth-of-type(1) >button");
+const deVideo = document.querySelector("main section:nth-of-type(1) >video");
+const deVideoButtonImg = document.querySelector("main section:nth-of-type(1) >button img");
+
+deVideoButton.onclick = toggleVideo;
+
+function toggleVideo() {
+	if ( deVideo.paused === true){
+		deVideo.play();
+		deVideoButtonImg.src = 'images/pause.png';
+		deVideoButtonImg.alt = 'pause';
+	}
+	else {
+		deVideo.pause();
+		deVideoButtonImg.src = 'images/play.png';
+		deVideoButtonImg.alt = 'play';
+	}
+}
