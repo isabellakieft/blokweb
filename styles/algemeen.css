@@ -7,10 +7,11 @@
 	box-sizing: border-box;
 }
 
-html, body{
-margin:0;
-padding:0;
-box-sizing: border-box;
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 img {
@@ -29,6 +30,7 @@ img {
 	--color-background: #ffffff;
 	--color-main: #EE8CB4;
 	--color-select: #F1A3C3;
+	--color-background2: #000000;
 
 }
 
@@ -81,7 +83,7 @@ header {
 	z-index: 2;
 }
 
-/* alles direct in nav behalve <a> */
+
 header nav {
 	display: flex;
 	align-items: center;
@@ -94,17 +96,15 @@ header nav {
 header nav {
 	display: flex;
 	align-items: center;
-	gap: 1rem;
+	gap: 2rem;
+
 }
 
 header nav a {
 	display: block;
 	margin-right: auto;
+margin-left: 1em;
 }
-
-
-
-
 
 
 header nav ul {
@@ -115,17 +115,20 @@ header nav ul {
 header nav>ul {
 	display: flex;
 	flex-direction: column;
-	top: 1em;
+	top: 1.4em;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	translate: 100% 0;
 	background-color: var(--color-background);
+	align-items: start;
+	
+
 
 	position: fixed;
 	font-family: 'basegroot';
 	font-weight: bold;
-
+	z-index: 1;
 
 
 }
@@ -136,6 +139,7 @@ header nav ul.uitklap {
 
 	translate: 0 0;
 	font-size: 3em;
+	margin: 0;
 }
 
 header nav button {
@@ -158,8 +162,9 @@ header nav section button {
 header nav section button img {
 	max-width: 1rem;
 	height: auto;
-z-index: 1;
+	z-index: 2;
 }
+
 
 header nav section:nth-of-type(1) {
 	display: none;
@@ -227,6 +232,7 @@ header nav section:nth-of-type(2) button {
 	padding: 1em;
 }
 
+
 header li {
 	list-style: none;
 
@@ -276,7 +282,7 @@ header nav>ul li a {
 
 	header nav {
 		justify-content: space-between;
-		align-items: center;
+		
 	}
 
 	header nav>ul {
@@ -284,9 +290,7 @@ header nav>ul li a {
 		flex-direction: row;
 		position: static;
 		translate: 0 0;
-
 		gap: 2em;
-
 
 	}
 
@@ -311,7 +315,7 @@ header nav>ul li a {
 footer {
 	background-color: var(--color-text);
 	font-family: 'base';
-
+	padding: 1em;
 
 }
 
@@ -338,7 +342,7 @@ footer>section:nth-of-type(1) {
 
 footer section:nth-of-type(1) ul {
 	display: flex;
-	gap: 2.3em;	
+	gap: 2.3em;
 	padding: 0;
 }
 
@@ -348,6 +352,7 @@ footer>p {
 	font-weight: bold;
 	border-top: var(--color-background) 1px solid;
 	margin: 0;
+	padding: 1em 0;
 }
 
 footer h2 img {
@@ -377,9 +382,6 @@ footer section:nth-of-type(2) section:nth-of-type(5) {
 footer section:nth-of-type(2) section:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
-	
-	
-
 }
 
 
@@ -387,8 +389,8 @@ footer section:nth-of-type(2) section:nth-of-type(2) {
 footer section:nth-of-type(2) section:nth-of-type(2) img {
 	width: 1.7em;
 	height: auto;
-	margin-top:1em;
-	margin-bottom:1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 
@@ -398,7 +400,7 @@ footer section:nth-of-type(2) section:nth-of-type(4) ul {
 }
 
 footer section:nth-of-type(2) section:nth-of-type(4) {
-		grid-row-start: 2;
+	grid-row-start: 2;
 	grid-column-start: 2;
 	grid-column-end: 4;
 }
@@ -411,6 +413,7 @@ footer section:nth-of-type(2) section:nth-of-type(4) ul li a {
 	padding: 0;
 
 }
+
 footer section:nth-of-type(2) section:nth-of-type(4) ul {
 	display: flex;
 	justify-content: space-between;
@@ -457,12 +460,13 @@ footer section:nth-of-type(2) section:nth-of-type(2) a {
 	font-weight: bold;
 }
 
-footer section:nth-of-type(2) section:nth-of-type(5) > ul {
-	display:flex;
+footer section:nth-of-type(2) section:nth-of-type(5)>ul {
+	display: flex;
 	gap: 2em;
 
 }
-footer section:nth-of-type(2) section:nth-of-type(5) > ul li ul{
+
+footer section:nth-of-type(2) section:nth-of-type(5)>ul li ul {
 	padding: 0;
 
 }
@@ -471,7 +475,7 @@ footer section:nth-of-type(2) section:nth-of-type(5) ul li ul li {
 	color: var(--color-text-wit);
 	text-decoration: none;
 	list-style: none;
-	
+
 }
 
 footer section:nth-of-type(2) section:nth-of-type(5) {
@@ -485,7 +489,8 @@ footer section:nth-of-type(2) a img {
 	height: auto;
 
 }
-footer section:nth-of-type(2) a{
+
+footer section:nth-of-type(2) a {
 
 	grid-row-start: 2;
 	grid-column-start: 6;
@@ -493,45 +498,86 @@ footer section:nth-of-type(2) a{
 
 
 
-@media (max-width:67em){
 
-footer section:nth-of-type(1) {
-	grid-template-columns: 1fr 1fr;
-}
-footer section:nth-of-type(1) ul {
-	display: flex;
-	flex-direction: column;
-	gap: 1em;
-}
+@media (max-width:67em) {
 
-footer section:nth-of-type(2) {
-	display: flex;
-	flex-wrap: wrap;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-footer section:nth-of-type(2) section:nth-of-type(5) ul{
-	display: flex;
-	flex-direction: column;
-}
-footer section:nth-of-type(2) section:nth-of-type(1){
+	footer section:nth-of-type(1) {
+		grid-template-columns: 1fr 1fr;
+	}
 
-}
+	footer section:nth-of-type(1) ul {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+	}
 
-/* footer section:nth-of-type(2) section:nth-of-type(2){
-	
-}
-footer section:nth-of-type(2) section:nth-of-type(3){
-	
-}
-footer section:nth-of-type(2) section:nth-of-type(4){
-	
-}
-footer section:nth-of-type(2) section:nth-of-type(5){
-	
-}
-footer section:nth-of-type(2) section:nth-of-type(1){
-	
-} */
+	footer section:nth-of-type(2) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas:
+			"socials address"
+			"member address"
+			"tag address"
+			"secondary tekst"
+		;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(5) ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(1) {
+		grid-area: socials;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(1) ul {
+		display: flex;
+		flex-direction: row;
+
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(1) ul img {
+		max-width: 1.3em;
+		height: auto;
+
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(2) {
+		grid-area: member;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(3) {
+		grid-area: secondary;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(4) {
+		display: flex;
+		flex-direction: column;
+		grid-area: tag;
+
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(4) ul {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6em;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(5) {
+		grid-area: address;
+	}
+
+	footer section:nth-of-type(2) section:nth-of-type(5) ul {
+		padding: 0;
+	}
+
+	footer section:nth-of-type(2)>a {
+		grid-area: tekst;
+	}
+
+	/* studentassistente */
 
 
 }

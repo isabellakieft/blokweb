@@ -1,8 +1,12 @@
-/* //main// */
+/* MAIN ALGEMEEN */
 
 main {
 	background-color: var(--color-background);
 
+}
+
+main h2 {
+	font-size: 2.8em;
 }
 
 main section:nth-of-type(2),
@@ -10,44 +14,37 @@ main section:nth-of-type(3),
 main section:nth-of-type(4),
 main section:nth-of-type(5),
 main section:nth-of-type(6) {
-	margin: 0 8em;
-	padding: 1em;
-
+	margin: 0 0.2em;
+	padding: 3em 1em;
 }
-
 
 main section {
 	border-top: lightgray 1px solid;
 }
 
-main section>button {
-	color: var(--color-text);
-	font-family: 'basegroot';
-	font-weight: bold;
-	text-transform: uppercase;
-}
 
-main section>button:hover {
-	color: var(--color-main);
-
-}
 
 main section h2 {
 	color: var(--color-main);
 }
 
 main p {
-	font-size: 1.4em;
+	font-size: 1.1em;
 }
+
+/* BUTTONS EN A  */
+
 
 main a {
 	text-decoration: none;
 }
 
+
+
 main section:nth-of-type(1)>a,
 main section:nth-of-type(2)>a {
 	background-color: var(--color-main);
-	color: var(--color-text);
+	color: var(--color-rozebutton);
 	padding: 0.5em;
 	border-radius: 1.5em;
 	border: none;
@@ -76,49 +73,54 @@ main section button:hover {
 }
 
 
-main section:nth-of-type(3) a {
-	color: var(--color-main);
-	text-decoration: underline;
-}
 
-main section:nth-of-type(3) a:hover {
-	color: var(--color-select);
-}
+
+
+/* EERSTE SECTIE */
 
 main section:nth-of-type(1) {
 	display: grid;
+	overflow: hidden;
+	align-items: center;
+
 }
 
 main section:nth-of-type(1) div {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	z-index: 1;
+
+
 }
 
 main section:nth-of-type(1) video {
 	grid-column-start: 1;
 	grid-row-start: 1;
 	width: 100%;
-	position: relative;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
 }
-
-
-
 
 
 main h1 {
 	color: var(--color-text-wit);
-	font-size: 4em;
 	font-family: "basegroot";
 	justify-self: center;
 	align-self: center;
 	text-align: center;
-	width: 40%;
-	;
-	background-color: rgba(0, 0, 0, 0.212);
+	/* background-color: rgba(0, 0, 0, 0.212);
 	-webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em; */
+	filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0) );
+	/* -webkit-text-stroke: 0.05em black; */
+	font-size: 2.8em;
+	width: 80%;
 }
+
+
 
 main section:nth-of-type(1) div>p {
 	color: var(--color-text-wit);
@@ -128,12 +130,18 @@ main section:nth-of-type(1) div>p {
 	align-self: center;
 	text-align: center;
 	font-weight: bold;
+		filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0) );
+			/* background-color: rgba(0, 0, 0, 0.212);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	padding: 0.2em 0.5em;
+	border-radius: 0.5em; */
 }
 
 main section:nth-of-type(1) div>a {
 
 	background-color: var(--color-main);
-	color: var(--color-text);
+	color: var(--color-rozebutton);
 	border-radius: 1.5em;
 	border: none;
 	padding: 1em 2em;
@@ -152,6 +160,13 @@ main section:nth-of-type(1) div>ul {
 	gap: 1em;
 	justify-content: center;
 	padding: 0;
+	font-size: 0.8em;
+	filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0) );
+	/* background-color: rgba(0, 0, 0, 0.212);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+
+	border-radius: 0.5em; */
 }
 
 main section:nth-of-type(1) div>ul li {
@@ -162,6 +177,8 @@ main section:nth-of-type(1) div>ul li {
 
 
 }
+
+
 
 main section:nth-of-type(1) div>ul li p {
 	font-weight: bold;
@@ -182,10 +199,16 @@ main section:nth-of-type(1) button {
 	z-index: 1;
 }
 
+
+
+
+/* TWEEDE SECTIE */
+
 main section:nth-of-type(2) ul li a {
 	font-size: 3em;
 	font-family: "basegroot";
 	line-height: 1.5em;
+	font-size: 2em;
 }
 
 main section:nth-of-type(2) {
@@ -194,7 +217,8 @@ main section:nth-of-type(2) {
 }
 
 main section:nth-of-type(2) ul li img {
-	width: 2em;
+
+	max-width: 1em;
 	height: auto;
 }
 
@@ -212,6 +236,26 @@ main section:nth-of-type(2)>a {
 
 	width: fit-content;
 }
+
+
+
+
+/* DERDE SECTIE */
+
+
+
+main section:nth-of-type(3) a {
+	color: var(--color-main);
+	text-decoration: underline;
+}
+
+main section:nth-of-type(3) a:hover {
+	color: var(--color-select);
+}
+
+
+
+/* VIERDE SECTIE */
 
 main section:nth-of-type(4) ul li {
 	list-style: none;
@@ -246,22 +290,22 @@ main section:nth-of-type(4)>a:hover {
 	color: var(--color-main);
 }
 
+
+
+/* VIJFDE SECTIE */
+
 main section:nth-of-type(5) ul {
 	list-style: none;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+
 	gap: 1em;
 	padding: 0;
+
+	grid-template-columns: repeat(2, 1fr);
+
 }
 
-/* main section:nth-of-type(6) {
-	display: flex;
-	flex-direction: column;
-}
-
-main section:nth-of-type(6) img{
-order: -1;
-} */
+/* ZESDE SECTIE */
 
 main section:nth-of-type(6) ul {
 	display: flex;
@@ -273,8 +317,18 @@ main section:nth-of-type(6) ul {
 	scrollbar-width: none;
 	padding: 0;
 	anchor-name: --carousel;
+	align-items: start;
+}
 
+main section:nth-of-type(6) img {
+	width: 8em;
+	height: auto;
+}
 
+main section:nth-of-type(6) h3 {
+	font-size: 1.5em;
+	font-family: "basegroot";
+	margin-bottom: 0;
 }
 
 main section:nth-of-type(6) ul {
@@ -287,15 +341,21 @@ main section:nth-of-type(6) ul {
 
 	&::scroll-button(right) {
 		position-area: block-end center;
-		content: '->' / 'Next';
+		content: '👉' / 'Next';
 		justify-self: end;
+		padding: 1em;
+		border-radius: 10em;
+		background-color: var(--color-background);
 	}
 
 	&::scroll-button(left) {
 		position-area: block-end center;
-		content: 'pijlinks' / 'Previous';
+		content: '👈' / 'Previous';
 		justify-self: end;
-		right: 3em;
+		right: 5em;
+		padding: 1em;
+		border-radius: 10em;
+		background-color: var(--color-background);
 	}
 }
 
@@ -319,11 +379,13 @@ main section:nth-of-type(6) ul {
 }
 
 main section:nth-of-type(6) li {
-	flex-basis: 35%;
+
+	flex-basis: 70%;
 	flex-shrink: 0;
 	scroll-snap-align: left;
 	display: flex;
 	flex-direction: column-reverse;
+	border-bottom: var(--color-main) 1px solid;
 
 }
 
@@ -332,79 +394,123 @@ main section:nth-of-type(6) p {
 }
 
 
-@media (max-width:67em) {
+
+
+
+
+
+
+
+
+
+/* MEDIA */
+
+
+@media (min-width:48em) {
+	main p {
+		font-size: 1.4em;
+	}
+
+
+	main section:nth-of-type(2) ul li a {
+		font-size: 3em;
+	}
+
+	main section:nth-of-type(2) ul li img {
+		width: 2em;
+		height: auto;
+	}
+
+	main section:nth-of-type(6) li {
+		flex-basis: 35%;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width:67em) {
 
 	main section:nth-of-type(2),
 	main section:nth-of-type(3),
 	main section:nth-of-type(4),
 	main section:nth-of-type(5),
 	main section:nth-of-type(6) {
-		margin: 0 0.2em;
+		margin: 0 8em;
+		padding: 4em 1em;
+
+
 	}
 
 	main section:nth-of-type(5) ul {
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 	}
-
 
 
 
 }
 
-
-@media (max-width:48em) {
-
-
-	main p {
-		font-size: 1.1em;
-	}
-
-	main section:nth-of-type(1) {
-		overflow: hidden;
-	}
-
+@media (min-width:80em) {
 	main section:nth-of-type(1) video {
-		min-width: 270%;
-		object-position: 50% 100%;
-		object-fit: cover;
-		transform: translate(-50%);
-		/* studentassistente */
+		height: 80%;
 
 	}
+}
 
-	main section:nth-of-type(1) h1 {
-		font-size: 2.8em;
-		width: 80%;
+@media (prefers-color-scheme:dark) {
+	main section:nth-of-type(6) img {
+		filter: invert(1);
 	}
 
-	main h2 {
-		font-size: 2.8em;
+	main section:nth-of-type(6) ul {
+		&::scroll-button(left) {
+			border-color: var(--color-main);
+		}
+
+		        &::scroll-button(right) {
+            border-color: var(--color-main);
+        }
 	}
 
-	main section:nth-of-type(1) div>ul {
-		font-size: 0.8em;
-
-	}
-
-	main section:nth-of-type(1) div {
-		margin-top: 2em;
-	}
-
-	main section:nth-of-type(2) ul li a {
-		font-size: 2em;
-	}
-
-	main section:nth-of-type(2) ul li img {
-		max-width: 1em;
-		height: auto;
-	}
-
-	main section:nth-of-type(6) li {
-		flex-basis: 70%;
-	}
+}
 
 
 
+details{
+	position: relative;
+	color: var(--color-text);
+	    font-family: 'base';
+font-size: 1.4em;
+text-decoration: none;
+margin: 1.5em 0;
+}
+
+details summary::after{
+	content: "read more 🡣";
+	position: absolute;
+	top:100%;
+	left:0;
+
+	color: var(--color-text);
+	font-family: 'basegroot';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+details summary:hover::after {
+	color: var(--color-main);
+}
 
 
+
+details[open] summary::after{
+	content: "read less 🡡";
+
+}
+
+details:first-of-type summary::marker,
+:is(::-webkit-details-marker) {
+  content: none;
 }

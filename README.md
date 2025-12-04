@@ -129,7 +129,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
-
+vragen:
+header niet in midden
+buttons carosel
+2de carosel 1tje verder
+tekst video in midden
+selecteer locatie naast elkaar
+read more summery?
 
 
 
@@ -147,7 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | playbutton  | footer             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -177,7 +183,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
+vragen:
+hoe hou ik de header dezelfde hoogte
 
 
 ## Voortgang 3 (week 4)
