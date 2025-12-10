@@ -40,12 +40,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
  homepagina 
-  <img src="images/kleinschermorgineel.jpeg" width="375px" alt="homepagina">
+  <img src="kleinschermorgineel.jpeg" width="375px" alt="homepagina">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
   plan your visit
-  <img src="images/kleinschermorgineel2.jpeg" width="375px" alt="2de pagina">
+  <img src="kleinschermorgineel2.jpeg" width="375px" alt="2de pagina">
 
   hier de naam van de pagina  
   
@@ -70,11 +70,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   dark-light mode
   high contrast
 
-   <img src="images/checklist1.png" width="375px" alt="checklist">
- <img src="images/checklist2.png" width="375px" alt="checklist">
-  <img src="images/checklist3.png" width="375px" alt="checklist">
-   <img src="images/checklist4.png" width="375px" alt="checklist">
-    <img src="images/checklist5.png" width="375px" alt="checklist">
+   <img src="checklist1.png" width="375px" alt="checklist">
+ <img src="checklist2.png" width="375px" alt="checklist">
+  <img src="checklist3.png" width="375px" alt="checklist">
+   <img src="checklist4.png" width="375px" alt="checklist">
+    <img src="checklist5.png" width="375px" alt="checklist">
 
 </details>
 
