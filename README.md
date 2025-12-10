@@ -70,11 +70,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   dark-light mode
   high contrast
 
-   <img src="checklist1.HEIC" width="375px" alt="checklist1">
- <img src="checklist2.HEIC" width="375px" alt="checklist2">
-  <img src="checklist3.HEIC" width="375px" alt="checklist3">
-   <img src="checklist4.HEIC" width="375px" alt="checklist4">
-    <img src="checklist5.HEIC" width="375px" alt="checklist5">
+   <img src="checklist1.png" width="375px" alt="checklist1">
+ <img src="checklist2.png" width="375px" alt="checklist2">
+  <img src="checklist3.png" width="375px" alt="checklist3">
+   <img src="checklist4.png" width="375px" alt="checklist4">
+    <img src="checklist5.png" width="375px" alt="checklist5">
 
 </details>
 
