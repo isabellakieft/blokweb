@@ -39,16 +39,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   (https://www.mocomuseum.com/)
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="home1.png" width="375px" alt="omschrijving van de pagina">
-  <img src="home2.png" width="375px" alt="omschrijving van de pagina">
+ homepagina 
+  <img src="images/kleinschermorgineel.jpeg" width="375px" alt="homepagina">
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  <img src="images/visite1.png" width="375px" alt="omschrijving van de pagina">
-  <img src="images/visite2.png" width="375px" alt="omschrijving van de pagina">
-   <img src="images/visite3.png" width="375px" alt="omschrijving van de pagina">
-    <img src="images/visite4.png" width="375px" alt="omschrijving van de pagina">
-     <img src="images/visite5.png" width="375px" alt="omschrijving van de pagina">
+  plan your visit
+  <img src="images/kleinschermorgineel2.jpeg" width="375px" alt="2de pagina">
+
   hier de naam van de pagina  
   
  
@@ -72,6 +70,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   dark-light mode
   high contrast
 
+   <img src="images/checklist1.png" width="375px" alt="checklist">
+ <img src="images/checklist2.png" width="375px" alt="checklist">
+  <img src="images/checklist3.png" width="375px" alt="checklist">
+   <img src="images/checklist4.png" width="375px" alt="checklist">
+    <img src="images/checklist5.png" width="375px" alt="checklist">
+
 </details>
 
 
@@ -85,10 +89,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="images/Frame1.png" width="375px" alt="breakdown van de hele pagina">
   <img src="images/Frame 2.png" width="375px" alt="breakdown van de hele pagina">
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -125,13 +127,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 </details>
 
-vragen ondertussen:
-header niet in midden
-buttons carosel
-2de carosel 1tje verder
-tekst video in midden
-selecteer locatie naast elkaar
-read more summery?
 
 
 
@@ -141,7 +136,13 @@ read more summery?
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+vragen ondertussen:
+header niet in midden
+buttons carosel
+2de carosel 1tje verder
+tekst video in midden
+selecteer locatie naast elkaar
+read more summery?
 
 
   ### Agenda voor meeting
@@ -222,8 +223,8 @@ hoe hou ik de header dezelfde hoogte
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+vragen:
+hoe hou ik de header dezelfde hoogte
 
   ### Agenda voor meeting
   samen met je groepje opstellen
