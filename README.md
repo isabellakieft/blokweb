@@ -69,7 +69,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   geen headings skippen
   betere focus states
   skiplink
-  links identificeren in nieuwe tab
   dark-light mode
   high contrast
 
@@ -122,14 +121,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - vragen zijn beantwoord, het heeft me geholpen verder te komen.
 
 </details>
 
-vragen:
+vragen ondertussen:
 header niet in midden
 buttons carosel
 2de carosel 1tje verder
@@ -161,10 +157,8 @@ read more summery?
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - footer geholpe met templates
+  - playbutton konden ze me moeilijk mee helpen maar ik heb zelf een oplossing gevonden
 
 </details>
 
@@ -178,7 +172,42 @@ read more summery?
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Verbeteringen
+  1-Links hebben een duidelijke beschrijving
+  <img src="images/linkseerst.png" width="375px" alt="links in het orginele">
+  <img src="images/linksdaarna.png" width="375px" alt="links op mijn pagina">
+
+  2-unieke titel voor elke pagina
+  <img src="images/titelpaginaeerst1.png" width="375px" alt="titel op het orginele">
+  <img src="images/titelpaginaeerst2.png" width="375px" alt="titel op het orginele">
+    <img src="images/titelpaginadaarna1.png" width="375px" alt="titel op mijn pagina">
+  <img src="images/titelpaginadaarna2.png" width="375px" alt="titel op mijn pagina">
+
+3-de pagina kan draaien 
+
+4-Betere space tussen items kan groter
+  <img src="images/spaceorgineel.png" width="375px" alt="space tussen kopjes op het orginele">
+  <img src="images/spacemijn.png" width="375px" alt="space tussen kopjes op mijne">
+
+5-Headinglevels niet skippen  en in logische volgorde H1-H2-H3
+
+6- Video iet autoplay
+
+7-Skiplink aanwezig
+  <img src="images/skiplink.png" width="375px" alt="skiplink op mijn pagina">
+
+8-Focus states verbeterd, met motion en kleur
+  <img src="images/focus1.png" width="375px" alt="focusstate op het orginele">
+  <img src="images/focus2.png" width="375px" alt="focusstate op mijne">
+
+9- Darkmode
+  <img src="images/paginadarkmode1.jpeg" width="375px" alt="pagina 1 in darkmode">
+   <img src="images/paginadarkmode2.jpeg" width="375px" alt="pagina 2 in darkmode">
+
+  10- Tekst op het plaatje leesbaarder
+    <img src="images/leesbaarheid.png" width="375px" alt="leesbaarheid van tekst op het orginele">
+  <img src="images/leesbaarheid2.png" width="375px" alt="leesbaarheid van tekst op mijne">
+
 
 </details>
 
@@ -201,18 +230,17 @@ hoe hou ik de header dezelfde hoogte
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | skiplink  | en dit             | en ik dit    | en dan ik dat    |
+  | header in het midden | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - ik snap wat een skiplink is, hoe ik het moet maken en hoe het wordt gebruikt
+  - header in het midden heb ik bij de verkeerde parent gezet
+
 
 </details>
 
@@ -226,19 +254,43 @@ hoe hou ik de header dezelfde hoogte
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="images/pagina1.jpeg" width="375px" alt="pagina 1">
+   <img src="images/pagina2.jpeg" width="375px" alt="pagina 2">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Hoe je een website zo toegankelijk mogenlijk kan maken met darkmode, contrast, kleurenextentie en verschillende states.
+    <img src="images/paginadarkmode1.jpeg" width="375px" alt="pagina 1 in darkmode">
+   <img src="images/paginadarkmode2.jpeg" width="375px" alt="pagina 2 in darkmode">
+   <img src="images/kleurenblind.png" width="375px" alt="pagina met een kleurenblinden extentie">
+   <img src="images/contrast.png" width="375px" alt="contrasten checker">
+ <img src="images/states.png" width="375px" alt="states">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Ook heb ik geleerd hoe ik dingen moet positioneren met grid en flex.
+  <img src="images/footer.png" width="375px" alt="footer">
+    <img src="images/codefooter.png" width="375px" alt="code footer">
 
+  Een video als achtergrond, details, skiplink en bijvoorbeeld een carosel was helemaal nieuw voor mij en ik heb geleerd dit toe te passen.
+  <img src="images/skiplink.png" width="375px" alt="skiplink op mijn pagina">
+  <img src="images/carosel.png" width="375px" alt="carosel">
+  <img src="images/achtergrondvideo.png" width="375px" alt="video">
+    <img src="images/details.png" width="375px" alt="details/summary">
+
+
+  En ik heb geleerd om met media te werken om voor elk scherm een passend ontwerp te maken.
+  <img src="images/footer.png" width="375px" alt="footer">
+  <img src="images/footerklein.png" width="375px" alt="footer kleine pagina">
+  <img src="images/grotepagina.png" width="375px" alt="groot scherm">
+  <img src="images/kleinepagina.png" width="375px" alt="klein scherm">
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  - als je tabt op klein scherm dat je het uiklapscherm overslaat tot hij is uitgeklapt
+  - Foutmelding bij validatie op read more
+    <img src="images/error.png" width="375px" alt="foutmeldingen">
+  - Playbutton van video laten meebewegen als het scherm groter of kleiner wordt
+    <img src="images/positiebutton.png" width="375px" alt="button in mijn pagina">
+    <img src="images/positiebutton2.png" width="375px" alt="button in het orginele">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
@@ -254,8 +306,8 @@ hoe hou ik de header dezelfde hoogte
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary 
+  2. https://fjolt.com/article/css-states
+  3. https://css-tricks.com/almanac/properties/a/animation/
 
 </details>

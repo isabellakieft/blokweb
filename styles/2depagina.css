@@ -15,13 +15,13 @@ main section:nth-of-type(3),
 main section:nth-of-type(4),
 main section:nth-of-type(5),
 main section:nth-of-type(6) {
-	margin: 0 0.2em;
-	padding: 1em;
+    margin: 0 0.2em;
+    padding: 1em;
 }
 
 
 
-main >section {
+main>section {
     border-top: lightgray 1px solid;
 }
 
@@ -34,6 +34,9 @@ main section>button {
 
 main section>button:hover {
     color: var(--color-main);
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);
 
 }
 
@@ -66,6 +69,9 @@ main section:nth-of-type(2)>a {
 main section:nth-of-type(1)>a:hover,
 main section:nth-of-type(2)>a:hover {
     background-color: var(--color-select);
+    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-background2);
 }
 
 main section ul li a {
@@ -83,6 +89,7 @@ main section button {
 
 main section button:hover {
     color: var(--color-select);
+
 }
 
 
@@ -92,6 +99,7 @@ main section button:hover {
 
 main section:nth-of-type(1) {
     display: grid;
+    align-items: center;
 }
 
 main section:nth-of-type(1) div {
@@ -101,7 +109,7 @@ main section:nth-of-type(1) div {
 
 }
 
-main section:nth-of-type(1) > img {
+main section:nth-of-type(1)>img {
     grid-column-start: 1;
     grid-row-start: 1;
     width: 100%;
@@ -112,14 +120,14 @@ main section:nth-of-type(1) > img {
 
 
 main h1 {
-	color: var(--color-text-wit);
-	font-size: 3em;
-	font-family: "basegroot";
-	justify-self: center;
-	align-self: center;
-	text-align: center;
-	width: 80%;
-	;
+    color: var(--color-text-wit);
+    font-size: 3em;
+    font-family: "basegroot";
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    width: 80%;
+    filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
 }
 
 main section:nth-of-type(1) div>p {
@@ -130,6 +138,7 @@ main section:nth-of-type(1) div>p {
     align-self: center;
     text-align: center;
     font-weight: bold;
+    filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
 }
 
 main section:nth-of-type(1) div>a {
@@ -153,7 +162,10 @@ main section:nth-of-type(1) div>ul {
     display: flex;
     gap: 1em;
     justify-content: center;
-padding:0;
+    padding: 0;
+    filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0));
+    font-size: 0.7em;
+
 }
 
 main section:nth-of-type(1) div>ul li {
@@ -168,11 +180,11 @@ main section:nth-of-type(1) div>ul li {
 main section:nth-of-type(1) div>ul li p {
     font-weight: bold;
     color: var(--color-text-wit);
-    font-size: 0.5em;
+    font-size: 1em;
 }
 
 main section:nth-of-type(1) div>ul li img {
-    width: 2em;
+    width: 1.5em;
     height: auto;
 }
 
@@ -197,11 +209,14 @@ main section:nth-of-type(2) h3 {
     font-size: 1.6em;
     color: var(--color-text)
 }
+
 main section:nth-of-type(2) ul a {
     color: var(--color-main);
     text-decoration: underline;
 }
-
+main section:nth-of-type(2) li:nth-of-type(3) >a {
+font-size: 1.1em;
+}
 
 main section:nth-of-type(2) ul li:nth-of-type(1) ol {
     font-family: "base";
@@ -209,12 +224,13 @@ main section:nth-of-type(2) ul li:nth-of-type(1) ol {
     padding: 0;
     color: var(--color-text)
 }
+
 main section:nth-of-type(2)>a {
     background-color: var(--color-background2);
     color: var(--color-text-wit);
-text-transform: uppercase;
-font-family: "basegroot";
-padding: 1em 1.2em;
+    text-transform: uppercase;
+    font-family: "basegroot";
+    padding: 1em 1.2em;
 }
 
 
@@ -246,21 +262,21 @@ main section:nth-of-type(3) ul {
 
     &::scroll-button(right) {
         position-area: block-end center;
-		content: '👉' / 'Next';
-		justify-self: end;
-		padding: 1em;
-		border-radius: 10em;
-		background-color: var(--color-background);
+        content: '👉' / 'Next';
+        justify-self: end;
+        padding: 1em;
+        border-radius: 10em;
+        background-color: var(--color-background);
     }
 
     &::scroll-button(left) {
-        		position-area: block-end center;
-		content: '👈' / 'Previous';
-		justify-self: end;
-		right: 5em;
-		padding: 1em;
-		border-radius: 10em;
-		background-color: var(--color-background);
+        position-area: block-end center;
+        content: '👈' / 'Previous';
+        justify-self: end;
+        right: 5em;
+        padding: 1em;
+        border-radius: 10em;
+        background-color: var(--color-background);
     }
 }
 
@@ -279,7 +295,7 @@ main section:nth-of-type(3) ul {
         gap: 20px;
     }
 
-    >li {}
+
 }
 
 main section:nth-of-type(3) li {
@@ -328,11 +344,12 @@ main section:nth-of-type(3) li:nth-of-type(1) p {
 
 /* VIERDE SECTIE */
 
-main section:nth-of-type(4) article a{
-   display: flex;
-   flex-direction: column;
+main section:nth-of-type(4) article a {
+    display: flex;
+    flex-direction: column;
 }
-main section:nth-of-type(4) img{
+
+main section:nth-of-type(4) img {
     order: -1;
 
 }
@@ -345,7 +362,8 @@ main section:nth-of-type(4) h3 {
     margin: 0.2em 0;
     line-height: 0.9em;
 }
-main section:nth-of-type(4) p:nth-of-type(2){
+
+main section:nth-of-type(4) p:nth-of-type(2) {
     font-weight: bold;
     text-decoration: underline;
     text-underline-offset: 0.3em;
@@ -353,23 +371,34 @@ main section:nth-of-type(4) p:nth-of-type(2){
     font-family: "base";
 
 }
-main section:nth-of-type(4):hover p:nth-of-type(2){
+
+main section:nth-of-type(4) article:nth-of-type(1):hover p:nth-of-type(2) {
     color: var(--color-main);
 }
-main section:nth-of-type(4) p{
-            margin-top: 0;
+
+main section:nth-of-type(4) article:nth-of-type(2):hover p:nth-of-type(2) {
+    color: var(--color-main);
 }
-main section:nth-of-type(4) p:nth-of-type(1){
+
+main section:nth-of-type(4) article:nth-of-type(3):hover p:nth-of-type(2) {
+    color: var(--color-main);
+}
+
+main section:nth-of-type(4) p {
+    margin-top: 0;
+}
+
+main section:nth-of-type(4) p:nth-of-type(1) {
     font-size: 1.3em;
 }
-main section:nth-of-type(4)>a{
-     background-color: var(--color-background2);
+
+main section:nth-of-type(4)>a {
+    background-color: var(--color-background2);
     color: var(--color-text-wit);
-text-transform: uppercase;
-font-family: "basegroot";
-padding: 1em 1.2em;
-border-radius: 2em;
-margin: 2em;
+    text-transform: uppercase;
+    font-family: "basegroot";
+    padding: 1em 1.2em;
+    border-radius: 2em;
 
 }
 
@@ -377,39 +406,40 @@ margin: 2em;
 /* SECTION 5 */
 
 
-main section:nth-of-type(5) h3{
+main section:nth-of-type(5) h3 {
     color: var(--color-main);
-      font-family: "basegroot";
-      font-size: 2em;
+    font-family: "basegroot";
+    font-size: 2em;
 }
 
 
 /* https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/summary */
 details {
-  border-bottom: 1px solid var(--color-main);
-  padding: 0.5em 0.5em 0;
+    border-bottom: 1px solid var(--color-main);
+    padding: 0.5em 0.5em 0;
 }
 
 summary {
-  font-family: "basegroot";
-  font-size: 1.5em;
-  margin: -0.5em -0.5em 0;
-  padding: 0.5em;
-  color: var(--color-text);
+    font-family: "basegroot";
+    font-size: 1.5em;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+    color: var(--color-text);
 }
 
 details[open] {
-  padding: 0.5em;
-  font-size: 1.1em;
-  font-family: "base";
-  color: var(--color-text);
+    padding: 0.5em;
+    font-size: 1.1em;
+    font-family: "base";
+    color: var(--color-text);
 }
 
 details[open] summary {
-  margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
     font-size: 1.4em;
 }
-main section:nth-of-type(5) details a{
+
+main section:nth-of-type(5) details a {
     color: var(--color-main);
     text-decoration: underline;
     text-decoration-color: var(--color-main);
@@ -422,71 +452,89 @@ main section:nth-of-type(5) details a{
 
 
 
-/* MEDIA */ 
+/* MEDIA */
 
-@media (min-width:45em){
-    	main section:nth-of-type(3) li {
-    flex-basis: 40%;}
+@media (min-width:45em) {
+    main section:nth-of-type(3) li {
+        flex-basis: 40%;
+    }
+
+    main section:nth-of-type(1) div>ul {
+        font-size: 1.1em;
+
+    }
 }
 
 @media (min-width:67em) {
 
-	main section:nth-of-type(2),
-	main section:nth-of-type(3),
-	main section:nth-of-type(4),
-	main section:nth-of-type(5),
-	main section:nth-of-type(6) {
-		margin: 0 8em;
-		padding: 1em;
+    main section:nth-of-type(2),
+    main section:nth-of-type(3),
+    main section:nth-of-type(4),
+    main section:nth-of-type(5),
+    main section:nth-of-type(6) {
+        margin: 0 8em;
+        padding: 1em;
 
 
-	}
-main p {
-    font-size: 1.4em;
+    }
+
+    main p {
+        font-size: 1.4em;
+    }
+
+    main section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+
+    main section:nth-of-type(2) h2 {
+        grid-column: 1;
+        font-size: 4em;
+    }
+
+    main section:nth-of-type(2) ul {
+        grid-column: 2;
+
+    }
+
+
+    main section:nth-of-type(2) a {
+        grid-column: 2;
+    }
+
+
+
+    main section:nth-of-type(2) ul li:nth-of-type(1) ol {
+        font-size: 1.4em;
+        line-height: 2em;
+    }
+
+    main section:nth-of-type(4) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+
+    }
+
+    main section:nth-of-type(4) h2 {
+        grid-column: 1/-1;
+    }
+
+    main section:nth-of-type(4) a {
+        grid-column: 1/-1;
+
+    }
+
+
+
+main section:nth-of-type(2) li:nth-of-type(3) >a {
+font-size: 1.4em;
 }
-main section:nth-of-type(2) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-}
-
-main section:nth-of-type(2) h2 {
-    grid-column: 1;
-    font-size: 4em;
-}
-
-main section:nth-of-type(2) ul {
-    grid-column: 2;
-
-}
-
-
-main section:nth-of-type(2) a {
-    grid-column: 2;
-}
 
 
 
-main section:nth-of-type(2) ul li:nth-of-type(1) ol {
-    font-size: 1.4em;
-    line-height: 2em;
-}
-
-main section:nth-of-type(4){
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-
-}
-main section:nth-of-type(4) h2{
-    grid-column: 1/-1;
-}
-
-main section:nth-of-type(4) a{
-    grid-column: 1/-1;
-}
-
-/* main section:nth-of-type(4) article{
+    /* main section:nth-of-type(4) article{
     display: flex;
     flex-direction: row;
 
@@ -499,36 +547,61 @@ main section:nth-of-type(4) a{
 
 
 
-main section:nth-of-type(5) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+    main section:nth-of-type(5) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
-main section:nth-of-type(5) h2 {
-    margin-top: 0.75em;
-}
+    main section:nth-of-type(5) h2 {
+        margin-top: 0.75em;
+    }
 
-@media (min-width:80em) {
-main section:nth-of-type(1) > img {
-    height: 80%;
+    @media (min-width:80em) {
+        main section:nth-of-type(1)>img {
+            height: 80%;
+        }
+    }
 }
-}}
 
 
 
 @media (prefers-color-scheme:dark) {
-main section:nth-of-type(2)>a {
-    background-color: var(--color-main);
-    color: var(--color-rozebutton)
-}
-
-main section:nth-of-type(3) ul {
-    &::scroll-button(right) {
-border-color: var(--color-main);
+    main section:nth-of-type(2)>a {
+        background-color: var(--color-main);
+        color: var(--color-rozebutton)
     }
 
-  &::scroll-button(left) {
-border-color: var(--color-main);
+    main section:nth-of-type(3) ul {
+        &::scroll-button(right) {
+            border-color: var(--color-main);
+        }
+
+        &::scroll-button(left) {
+            border-color: var(--color-main);
+        }
     }
-}
+
+    main section:nth-of-type(3) li:nth-of-type(1) img {
+        background-color: var(--color-background2);
+    }
+
+    main section:nth-of-type(3) h3 {
+        color: var(--color-text);
+    }
+
+    main section:nth-of-type(3) li:nth-of-type(1) {
+        background-color: var(--color-main);
+    }
+
+    main section:nth-of-type(3) li:nth-of-type(1) h3 {
+        color: var(--color-rozebutton);
+    }
+
+    main section:nth-of-type(3) li:nth-of-type(1) p {
+        color: var(--color-rozebutton);
+    }
+    main section:nth-of-type(4)>a {
+        color: var(--color-wit);
+        background-color: var(--color-main);
+    }
 }

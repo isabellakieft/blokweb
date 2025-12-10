@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,17 +8,20 @@
 
 	<title>MocoMuseumAmsterdamHome</title>
 
-	<link href="styles/algemeen copy.css" rel="stylesheet">
-	<link href="styles/home copy.css" rel="stylesheet">
+	<link href="styles/algemeencopy.css" rel="stylesheet">
+	<link href="styles/homecopy.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
 
 
+
+
 <body>
 	<Header>
+		<a href="#main">Go to homepage of Mocomuseum</a>
 		<nav>
-			<a href="home.html">
+			<a aria-label="Go to homepage of Mocomuseum" href="home.html">
 				<img src="images/moco-museum-logo.png" alt="Moco Museum logo">
 			</a>
 			<section>
@@ -27,18 +30,19 @@
 					<img src="images/pijlbeneden.png" alt="pijl naar beneden">
 				</button>
 				<ul>
-					<li><a href="#">Amsterdam</a></li>
-					<li><a href="#">London</a></li>
-					<li><a href="#">Barcalona</a></li>
+					<li><a aria-label="Mocomuseum in Amsterdam" href="#">Amsterdam</a></li>
+					<li><a aria-label="Mocomuseum in London" href="#">London</a></li>
+					<li><a aria-label="Mocomuseum in Barcalona" href="#">Barcalona</a></li>
 				</ul>
 			</section>
 
 			<ul>
-				<li><a href="home.html">Moco Amsterdam</a></li>
-				<li><a href="Plan.html">Plan Your Visite</a></li>
-				<li><a href="exhibitions.html">Exhibitions</a></li>
-				<li><a href="artist.html">Artist</a></li>
-				<li><a href="news.html">News</a></li>
+				<li><a aria-label="Homepage of Mocomuseum Amsterdam" class="huidig" href="index.html">Moco Amsterdam</a>
+				</li>
+				<li><a aria-label="Plan your visit to Mocomuseum" href="2depagina.html">Plan Your Visit</a></li>
+				<li><a aria-label="Exhibitions in Mocomuseum" href="#">Exhibitions</a></li>
+				<li><a aria-label="See all Artists" href="#">Artist</a></li>
+				<li><a aria-label="News from Mocomuseum" href="#">News</a></li>
 			</ul>
 
 			<section>
@@ -56,15 +60,15 @@
 			<section>
 				<button>Tickets</button>
 				<ul>
-					<li><a href="#">Amsterdam</a></li>
-					<li><a href="#">London</a></li>
-					<li><a href="#">Barcalona</a></li>
+					<li><a aria-label="Tickets in Amsterdam" href="#">Amsterdam</a></li>
+					<li><a aria-label="Tickets in London" href="#">London</a></li>
+					<li><a aria-label="Tickets in Barcalona" href="#">Barcalona</a></li>
 				</ul>
 			</section>
 			<button><img src="images/hamburger.png" alt="hamburger menu"></button>
 		</nav>
 	</Header>
-	<main>
+	<main id="main">
 		<section>
 			<div>
 				<h1>Moco Museum: Modern Art Museum in Amsterdam</h1>
@@ -91,17 +95,18 @@
 					</li>
 				</ul>
 			</div>
-			<video autoplay loop muted plays-inline>
+			<video loop muted>
 				<source src="images/video.mp4" type="video/mp4">
 			</video>
-			<button><img src="images/pause.png" alt="pause button"></button>
+			<button><img src="images/play.png" alt="play button"></button>
 		</section>
 		<section>
 			<h2>What is Moco Museum?</h2>
 			<ul>
-				<li><img src="images/Arrow 1.png" alt="arrow to the right "><a href="Tickets.html">Tickets</a></li>
-				<li><img src="images/Arrow 1.png" alt="arrow to the right"><a href="Plan.html">Plan Your Visite</a></li>
-				<li><img src="images/Arrow 1.png" alt="arrow to the right"><a href="exhibitions.html">Exhibitions</a></li>
+				<li><img alt="arrow to the right" src="images/Arrow1.png"><a href="Tickets.html">Tickets</a></li>
+				<li><img alt="arrow to the right" src="images/Arrow1.png"><a href="Plan.html">Plan Your Visite</a></li>
+				<li><img alt="arrow to the right" src="images/Arrow1.png"><a href="exhibitions.html">Exhibitions</a>
+				</li>
 			</ul>
 			<p>Step into the world of Moco. See iconic works from Warhol, Haring, Banksy, Basquiat, Kusama, and many
 				more.</p>
@@ -111,7 +116,7 @@
 				iconic masterpieces from renowned modern and contemporary artists alongside cutting-edge works by
 				emerging talents. </p>
 			<a href="tickets.html">Get Tickets</a>
-
+			
 			<details>
 				Moco stands for Modern and Contemporary Museum in Amsterdam, where each visit offers a deep dive
 				into creativity, reflection, and innovation.
@@ -126,7 +131,7 @@
 
 				</summary>
 			</details>
-
+<div><img src="images/kerstman.png" alt="Santa on his ride"></div>
 
 		</section>
 		<section>
@@ -144,6 +149,7 @@
 				in Amsterdam offers an unmissable journey through vibrant creativity, making it a highlight for anyone
 				exploring Amsterdam’s museum and art gallery scene.
 				<summary>
+					
 
 				</summary>
 			</details>
@@ -152,27 +158,38 @@
 			<h2>Featured Artist in Amsterdam</h2>
 			<a href="artist.html">See all Artists</a>
 			<ul>
-				<li><a href="#">Banksy</a></li>
-				<li><a href="#">Basquiat</a></li>
-				<li><a href="#">Warhol</a></li>
-				<li><a href="#">Haring</a></li>
-				<li><a href="#">Kusama</a></li>
-				<li><a href="#">Hirst</a></li>
-				<li><a href="#">Digital Art</a></li>
+				<li><a aria-label="Artist Banksy" href="#">Banksy</a></li>
+				<li><a aria-label="Artist Basquiat" href="#">Basquiat</a></li>
+				<li><a aria-label="Artist Warhol" href="#">Warhol</a></li>
+				<li><a aria-label="Artist Basquiat" href="#">Haring</a></li>
+				<li><a aria-label="Artist Haring" href="#">Kusama</a></li>
+				<li><a aria-label="Artist Hirst" href="#">Hirst</a></li>
+				<li><a aria-label="Digital Art in MocoMuseum" href="#">Digital Art</a></li>
 			</ul>
 			<img src="images/Banksy.png" alt="Banksy painting">
 		</section>
 		<section>
 			<h2>Photo's</h2>
 			<ul>
-				<li><img src="images/fotorij1.png" alt="Crew interacting with colorful sculpture at Moco Museum Amsterdam"></li>
-				<li><img src="images/fotorij2.png" alt="Andres Reisinger seated in pink padded room installation at museum Amsterdam."></li>
-				<li><img src="images/fotorij3.png" alt="TIME magazine mirror artwork by Mungo Thomson with visitors posing at Moco Museum Amsterdam."></li>
-				<li><img src="images/fotorij4.png" alt="Pink outdoor art installation with umbrella-like structures at museum Amsterdam."></li>
-				<li><img src="images/fotorij5.png" alt="Visitor walking past colorful text-based artwork by Robbie Williams at Moco Museum Amsterdam."></li>
-				<li><img src="images/fotorij6.png" alt="Large Takashi Murakami artwork featuring Mickey Mouse at Moco Museum Amsterdam."></li>
-				<li><img src="images/fotorij7.png" alt="Classic portrait altered with surreal element by Banksy on display at Moco Museum Amsterdam."></li>
-				<li><img src="images/fotorij8.png" alt="Couple admiring immersive digital art wall at Moco Museum Amsterdam."></li>
+				<li><img src="images/fotorij1.png"
+						alt="Crew interacting with colorful sculpture at Moco Museum Amsterdam"></li>
+				<li><img src="images/fotorij2.png"
+						alt="Andres Reisinger seated in pink padded room installation at museum Amsterdam."></li>
+				<li><img src="images/fotorij3.png"
+						alt="TIME magazine mirror artwork by Mungo Thomson with visitors posing at Moco Museum Amsterdam.">
+				</li>
+				<li><img src="images/fotorij4.png"
+						alt="Pink outdoor art installation with umbrella-like structures at museum Amsterdam."></li>
+				<li><img src="images/fotorij5.png"
+						alt="Visitor walking past colorful text-based artwork by Robbie Williams at Moco Museum Amsterdam.">
+				</li>
+				<li><img src="images/fotorij6.png"
+						alt="Large Takashi Murakami artwork featuring Mickey Mouse at Moco Museum Amsterdam."></li>
+				<li><img src="images/fotorij7.png"
+						alt="Classic portrait altered with surreal element by Banksy on display at Moco Museum Amsterdam.">
+				</li>
+				<li><img src="images/fotorij8.png"
+						alt="Couple admiring immersive digital art wall at Moco Museum Amsterdam."></li>
 			</ul>
 		</section>
 		<section>
@@ -203,16 +220,16 @@
 		<h2><img src="images/mocomuseumlogowit.png" alt="mocomuseum logo"></h2>
 		<section>
 			<ul>
-				<li><a href="Plan.html">Visite</a></li>
-				<li><a href="exhibitions.html">Exhibitions</a></li>
-				<li><a href="artist.html">Artist</a></li>
-				<li><a href="tickets.html">Tickets</a></li>
+				<li><a aria-label="Plan your visit to Mocomuseum" href="Plan.html">Visite</a></li>
+				<li><a aria-label="Exhibitions in Mocomuseum" href="exhibitions.html">Exhibitions</a></li>
+				<li><a aria-label="See all Artists" href="artist.html">Artist</a></li>
+				<li><a aria-label="Get Tickets" href="tickets.html">Tickets</a></li>
 			</ul>
 			<ul>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Events</a></li>
 				<li><a href="#">Press</a></li>
-				<li><a href="#">Sschools</a></li>
+				<li><a href="#">Schools</a></li>
 				<li><a href="#">Groups</a></li>
 				<li><a href="#">Careers</a></li>
 				<li><a href="#">Contact</a></li>
@@ -222,12 +239,13 @@
 			<section>
 				<ul>
 					<li><a href="https://www.facebook.com/mocomuseum/"><img src="images/facebook.png"
-								alt="facebook logo"></a></li>
+								alt="facebook page Mocomuseum"></a></li>
 					<li><a href="https://www.instagram.com/mocomuseum/"><img src="images/instagram.png"
-								alt="instagram logo"></a></li>
-					<li><a href="https://www.tiktok.com/@mocomuseum"><img src="images/tiktok.png" alt="tiktok"></a></li>
+								alt="Instagram page Mocomuseum"></a></li>
+					<li><a href="https://www.tiktok.com/@mocomuseum"><img src="images/tiktok.png"
+								alt="Tiktok page Mocomuseum"></a></li>
 					<li><a href="https://www.linkedin.com/company/moco-museum/"><img src="images/linkedin.png"
-								alt="linkedin logo"></a></li>
+								alt="linkedin page Mocomuseum"></a></li>
 				</ul>
 				<p>Follow us @mocomusem</p>
 			</section>
@@ -278,7 +296,7 @@
 
 			</section>
 			<a href="#">
-				<img src="images/netvlieslogo.png" alt="Netvlies logo">
+				<img src="images/netvlieslogo.png" alt="Netvlies website">
 			</a>
 		</section>
 		<p>In art we trust</p>

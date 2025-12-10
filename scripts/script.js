@@ -1,5 +1,4 @@
 // JavaScript Document
-console.log("hi");
 
 
 const locatieButton = document.querySelector("header nav section:nth-of-type(1) button");
@@ -11,18 +10,19 @@ const locatieList2 = document.querySelector("header nav section:nth-of-type(2) u
 const hamburger = document.querySelector("header nav > button");
 const hamburgerShow = document.querySelector("header nav > ul");
 
+const deVideoButton = document.querySelector("main section:nth-of-type(1) >button");
+const deVideo = document.querySelector("main section:nth-of-type(1) >video");
+const deVideoButtonImg = document.querySelector("main section:nth-of-type(1) >button img");
 
-// locatieButton.onpointerenter = toggleLocaties;
+
+
 locatieButton.onclick = toggleLocaties;
-// locatieButton.onpointerleave = toggleLocaties;
 
 function toggleLocaties() {
     locatieList.classList.toggle("is-open");
 }
 
-// locatieButton2.onpointerenter = toggleLocaties2;
 locatieButton2.onclick = toggleLocaties2;
-// locatieButton2.onpointerleave = toggleLocaties2;
 
 function toggleLocaties2() {
     locatieList2.classList.toggle("open");
@@ -31,15 +31,18 @@ function toggleLocaties2() {
 hamburger.onclick = menu;
 
 function menu() {
-    hamburgerShow.classList.toggle("uitklap");
+	hamburgerShow.classList.toggle("uitklap");
+
+	if (hamburgerShow.classList.contains("uitklap")) {
+		hamburger.querySelector("img").src = 'images/kruis.png';
+		hamburger.querySelector("img").alt = 'kruis';
+	} else {
+		hamburger.querySelector("img").src = 'images/hamburger.png';
+		hamburger.querySelector("img").alt = 'hamburger';
+	}
 }
 
 
-
-
-const deVideoButton = document.querySelector("main section:nth-of-type(1) >button");
-const deVideo = document.querySelector("main section:nth-of-type(1) >video");
-const deVideoButtonImg = document.querySelector("main section:nth-of-type(1) >button img");
 
 deVideoButton.onclick = toggleVideo;
 

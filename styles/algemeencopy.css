@@ -32,6 +32,7 @@ img {
     --color-select: #F1A3C3;
     --color-background2: #000000;
     --color-rozebutton: #000000;
+    --color-link: #ff7b00;
 
 }
 
@@ -63,6 +64,45 @@ img {
 
 
 
+/* states */
+
+/* https://fjolt.com/article/css-states */
+
+::selection{
+    background-color: var(--color-select);
+    color: var(--color-background2);
+}
+
+a:focus, button:focus {
+  outline: 0.3em dotted var(--color-main);
+  outline-offset: 0.2em;
+}
+
+
+
+@keyframes Pulse {
+  0% {
+    outline-width: 0.2em;
+    outline-color: var(--color-text);
+  }
+  50% {
+    outline-width: 0.4em;
+    outline-color: var(--color-main); 
+  }
+  100% {
+    outline-width: 0.2em;
+    outline-color: var(--color-text);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:focus, button:focus {
+    animation: Pulse 2s infinite ease-in-out;
+  }}
+
+
+/* https://css-tricks.com/almanac/properties/a/animation/ */
+
 
 
 
@@ -90,11 +130,12 @@ h2 {
 
 header>a {
     position: absolute;
-    left:-9999999em;
+    left: -9999999em;
     color: var(--color-main);
 }
+
 header>a:focus {
-    left:0;
+    left: 0;
 }
 
 header {
@@ -102,16 +143,12 @@ header {
     position: sticky;
     top: 0;
     z-index: 2;
-    /* min-height: 100%;
-        max-height: 100%; */
-
 }
 
-.huidig{
+.huidig {
     text-decoration: underline;
-    	text-underline-offset: 0.4em;
-	text-decoration-color: var(--color-main);
-    
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);
 }
 
 header nav {
@@ -122,27 +159,11 @@ header nav {
 }
 
 
-
-headedr display none
-translate:-100%
-transistion .5s
-transition behavior allow 
-
-
-is :open
-translate 0%
-display block
-@starting-style[
-    translate:-100%
-]
-
-
 header nav a {
     display: block;
     margin-right: auto;
-flex-shrink: 0;
+    flex-shrink: 0;
 }
-
 
 header nav ul {
     display: none;
@@ -173,14 +194,15 @@ header nav>ul {
 
 
 header nav ul.uitklap {
-padding-left: 0.2em;
+    padding-left: 0.2em;
     translate: 0 0;
     font-size: 2.5em;
     margin: 0;
     padding-top: 1em;
 }
-header nav ul.uitklap li{
-padding: 0.35em 0;
+
+header nav ul.uitklap li {
+    padding: 0.35em 0;
 }
 
 
@@ -189,9 +211,11 @@ header nav button {
     height: auto;
     border: none;
 }
-header nav button img{
-max-width: 2.5rem;
+
+header nav button img {
+    max-width: 2.5rem;
 }
+
 nav>button img.open {
     background: url('../images/kruis.png');
 
@@ -291,6 +315,10 @@ header li a {
 
 header li a:hover {
     color: var(--color-select);
+        text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);
+    
 }
 
 header a img {
@@ -302,13 +330,16 @@ header a img {
 
 header section button:hover {
     color: var(--color-select);
+        text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);
 }
 
 header section:nth-of-type(3) button {
     background-color: var(--color-main);
     color: var(--color-rozebutton);
 
-padding: 0.5em 1em;
+    padding: 0.5em 1em;
     border-radius: 1.5em;
     border: none;
 
@@ -317,6 +348,9 @@ padding: 0.5em 1em;
 
 header section:nth-of-type(3) button:hover {
     background-color: var(--color-select);
+        text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-background2);
 }
 
 header nav>ul li a {
@@ -325,45 +359,7 @@ header nav>ul li a {
 }
 
 
-
-@media (min-width:25em) {
-header nav{
-gap: 1em;
-}
-
-header section:nth-of-type(3) button {
-
-padding: 1em 2em;
-}
-}
-@media (min-width:71em) {
-
-    header nav {
-        justify-content: space-between;
-
-    }
-
-    header nav>ul {
-        display: flex;
-        flex-direction: row;
-        position: static;
-        translate: 0 0;
-        gap: 2em;
-
-    }
-
-
-
-    header nav section:nth-of-type(1) {
-        display: block;
-    }
-
-    header nav>button {
-        display: none;
-    }
-
-}
-
+/* footer */
 
 
 footer {
@@ -372,7 +368,6 @@ footer {
     padding: 1em;
 
 }
-
 
 
 footer h2 {
@@ -387,6 +382,11 @@ footer section:nth-of-type(1) a {
     font-weight: bold;
 
 }
+footer section:nth-of-type(1) a:hover {
+            text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);}
+
 
 footer>section:nth-of-type(1) {
     display: grid;
@@ -591,6 +591,47 @@ footer section:nth-of-type(2)>a {
 
 
 
+@media (min-width:25em) {
+    header nav {
+        gap: 1em;
+    }
+
+    header section:nth-of-type(3) button {
+
+        padding: 1em 2em;
+    }
+}
+
+@media (min-width:71em) {
+
+    header nav {
+        justify-content: space-between;
+
+    }
+
+    header nav>ul {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        translate: 0 0;
+        gap: 2em;
+
+    }
+
+
+
+    header nav section:nth-of-type(1) {
+        display: block;
+    }
+
+    header nav>button {
+        display: none;
+    }
+
+}
+
+
+
 @media (min-width:67em) {
 
     footer>section:nth-of-type(1) {
@@ -623,6 +664,7 @@ footer section:nth-of-type(2)>a {
         grid-row-start: 1;
         grid-column-start: 1;
         overflow: wrap;
+        /* student */
     }
 
     footer section:nth-of-type(2) section:nth-of-type(2) {
@@ -672,20 +714,20 @@ footer section:nth-of-type(2)>a {
 
 }
 
- @media (prefers-color-scheme:dark) {
-  :root {
-    --color-text: #ffffff;
-    --color-text-wit: #ffffff;
-    --color-background: #000000;
-    --color-main: #EE8CB4;
-    --color-select: #F1A3C3;
-    --color-background2: #000000;
-    --color-rozebutton: #000000;
-  }
+@media (prefers-color-scheme:dark) {
+    :root {
+        --color-text: #ffffff;
+        --color-text-wit: #ffffff;
+        --color-background: #000000;
+        --color-main: #EE8CB4;
+        --color-select: #F1A3C3;
+        --color-background2: #000000;
+        --color-rozebutton: #000000;
+    }
 
-header a img{
-     filter: invert(1);
+    header a img {
+        filter: invert(1);
+    }
+
+
 }
-
-
- }

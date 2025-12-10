@@ -53,6 +53,9 @@ main section:nth-of-type(2)>a {
 main section:nth-of-type(1)>a:hover,
 main section:nth-of-type(2)>a:hover {
 	background-color: var(--color-select);
+	    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-background2);
 }
 
 main section ul li a {
@@ -62,6 +65,9 @@ main section ul li a {
 
 main section ul li a:hover {
 	color: var(--color-select);
+	    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    text-decoration-color: var(--color-main);
 }
 
 main section button {
@@ -70,6 +76,9 @@ main section button {
 
 main section button:hover {
 	color: var(--color-select);
+	    text-decoration: underline;
+    text-underline-offset: 0.4em;
+    text-decoration-color: var(--color-main);
 }
 
 
@@ -125,11 +134,6 @@ main section:nth-of-type(1) div>p {
 	text-align: center;
 	font-weight: bold;
 		filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0) );
-			/* background-color: rgba(0, 0, 0, 0.212);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-	padding: 0.2em 0.5em;
-	border-radius: 0.5em; */
 }
 
 main section:nth-of-type(1) div>a {
@@ -156,11 +160,6 @@ main section:nth-of-type(1) div>ul {
 	padding: 0;
 	font-size: 0.7em;
 	filter: drop-shadow(0 0 0.4rem rgb(0, 0, 0) );
-	/* background-color: rgba(0, 0, 0, 0.212);
-	-webkit-backdrop-filter: blur(10px);
-	backdrop-filter: blur(10px);
-
-	border-radius: 0.5em; */
 }
 
 main section:nth-of-type(1) div>ul li {
@@ -193,10 +192,63 @@ main section:nth-of-type(1) button {
 	z-index: 1;
 }
 
+/* readmore */
+
+details{
+	position: relative;
+	color: var(--color-text);
+	    font-family: 'base';
+		    font-size: 1.08em;
+text-decoration: none;
+margin: 1.5em 0;
+}
+
+details summary::after{
+	content: "read more 🡣";
+	position: absolute;
+	top:100%;
+	left:0;
+
+	color: var(--color-text);
+	font-family: 'basegroot';
+	font-weight: bold;
+	text-transform: uppercase;
+}
+details summary:hover::after {
+	color: var(--color-main);
+}
 
 
+
+details[open] summary::after{
+	content: "read less 🡡";
+
+}
+
+details:first-of-type summary::marker,
+:is(::-webkit-details-marker) {
+  content: none;
+}
 
 /* TWEEDE SECTIE */
+
+main section:nth-of-type(2) div > img{
+	width: 10em;
+	height: auto;
+}
+
+@keyframes Kerstman {
+	0%   { transform: translateX(0em); }
+	35%   { transform: translateX(-10em); }
+	65%  { transform: translateX(10em); }
+	100% { transform: translateX(100em); }
+}
+
+main section:nth-of-type(2) div:hover > img {
+	animation-name: Kerstman;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
 
 main section:nth-of-type(2) ul li a {
 	font-size: 3em;
@@ -221,7 +273,7 @@ main section:nth-of-type(2) ul {
 	padding: 0;
 }
 
-main section:nth-of-type(2)>a {
+main section:nth-of-type(2) >a {
 	font-family: 'basegroot';
 	font-weight: bold;
 	text-transform: uppercase;
@@ -245,6 +297,7 @@ main section:nth-of-type(3) a {
 
 main section:nth-of-type(3) a:hover {
 	color: var(--color-select);
+	
 }
 
 
@@ -291,12 +344,9 @@ main section:nth-of-type(4)>a:hover {
 main section:nth-of-type(5) ul {
 	list-style: none;
 	display: grid;
-
 	gap: 1em;
 	padding: 0;
-
 	grid-template-columns: repeat(2, 1fr);
-
 }
 
 /* ZESDE SECTIE */
@@ -389,13 +439,6 @@ main section:nth-of-type(6) p {
 
 
 
-
-
-
-
-
-
-
 /* MEDIA */
 
 
@@ -403,8 +446,13 @@ main section:nth-of-type(6) p {
 	main p {
 		font-size: 1.4em;
 	}
-
-
+main section:nth-of-type(2) div > img{
+	width: 15em;
+	height: auto;
+}
+details {
+	font-size: 1.3em;
+}
 	main section:nth-of-type(2) ul li a {
 		font-size: 3em;
 	}
@@ -477,38 +525,3 @@ main section:nth-of-type(1) div>ul {
 
 
 
-details{
-	position: relative;
-	color: var(--color-text);
-	    font-family: 'base';
-		    font-size: 1.08em;
-text-decoration: none;
-margin: 1.5em 0;
-}
-
-details summary::after{
-	content: "read more 🡣";
-	position: absolute;
-	top:100%;
-	left:0;
-
-	color: var(--color-text);
-	font-family: 'basegroot';
-	font-weight: bold;
-	text-transform: uppercase;
-}
-details summary:hover::after {
-	color: var(--color-main);
-}
-
-
-
-details[open] summary::after{
-	content: "read less 🡡";
-
-}
-
-details:first-of-type summary::marker,
-:is(::-webkit-details-marker) {
-  content: none;
-}
